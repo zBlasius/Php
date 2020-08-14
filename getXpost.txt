@@ -1,0 +1,4 @@
+Get e Post são formas de receber uma URL externa.
+
+Toda informação que vir desses dois métodos serão strings, caso eu precise de valores numéricos é preciso fazer
+uma conversão (cast).
