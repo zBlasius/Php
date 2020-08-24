@@ -1,0 +1,26 @@
+após o fim do endereço:
+
+para GET:    ?a=123
+
+ex:   http://localhost/php/variaveisPreDefinidas.php?a=123
+
+e se eu quisesse mais uma variável GET no mesmo endereço??
+
+ = &b=456
+
+ex: http://localhost/php/variaveisPreDefinidas.php?a=123&b=456
+
+CÓDIGO NA IDE: 
+
+<?php  
+
+$nome = $_GET["a"]; //toda informação vindo do get será string
+
+$nome2 = $_GET["b"];
+
+
+var_dump($nome, $nome2); // Aqui mostra o tipo do dado da variável
+
+echo "</br>", $nome, $nome2;   // Aqui irá mostrar em tela o resultado
+
+?>

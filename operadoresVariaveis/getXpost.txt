@@ -2,3 +2,5 @@ Get e Post são formas de receber uma URL externa.
 
 Toda informação que vir desses dois métodos serão strings, caso eu precise de valores numéricos é preciso fazer
 uma conversão (cast).
+
+o $_GET[''] recebe todas as variáveis que são recebidas através da URL
