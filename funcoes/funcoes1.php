@@ -5,11 +5,11 @@
 
 $a = 10;
 
-function trocaValor($a){
+function trocaValor(&$b){
 
-	$a = 50;  // dica: para verifica se chamou realmente a var $a, coloquei o +=, pois se for irá retornar 60  (50 + 10)
+	$b = 50;  // dica: para verifica se chamou realmente a var $a, coloquei o +=, pois se for irá retornar 60  (50 + 10)
 
-	return $a;
+	return $b;
 }
 /* O QUE ACONTECE NA FUNÇÃO FICA SOMENTE NA FUNÇÃO
 eu tinha pensado que o $a passaria a valer 50 até fora da função, mas me equivoquei  */
@@ -24,4 +24,10 @@ echo trocaValor($a);
 echo "</br>";
 
 echo $a;
+
+/* Mas então, como fazer uma função que realmente altere o valor da variável?
+Isso se chama passagem de parâmetro por referência */
+
+
+
 ?>
